@@ -9,4 +9,4 @@ console.log(nome, sobrenome);
 
 console.log(`Meu nome é ${nome} ${sobrenome} e tenho ${idade} anos`)
 
-// Definir a variável como const transforma ela em uma constante, ou seja, o valor não será alterado nunca. Para alterar suas variáveis, use let.
+// Definir a variável como const transforma ela em uma constante, ou seja, o valor não será alterado nunca. Para variáveis que serão alteradas durante o uso do sistema, use let.
