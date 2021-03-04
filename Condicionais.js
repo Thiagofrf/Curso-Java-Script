@@ -49,14 +49,32 @@ const estaAcompanhada = true;
 //Maneira aconselhavel -> 
 
 if(idadeComprador >= 18){ //Se o comprador tiver a idade maior ou igual a 18, ele poderá retirar um item da lista
-    console.log("Comprador maior de idade")
-    listaDeDestinos.splice(1, 1) //Estou apagando o item na posição 1 (Arrays começam na posição 0) e quero apagar só 1 item.
+    console.log("Comprador maior de idade");
+    listaDeDestinos.splice(1, 1); //Estou apagando o item na posição 1 (Arrays começam na posição 0) e quero apagar só 1 item.
     console.log("Destinos possíveis (array): ", listaDeDestinos);
 } else if (estaAcompanhada){
         console.log('O comprador esta acompanhado, entao pode retirar o item')
 } else {
     console.log("Comprador menor de idade e nao esta acompanhado, portanto náo pode retirar um item da lista ")
 }
+
+
+const passagemComprada = false
+
+if(idadeComprador >= 18 || estaAcompanhada == true){
+    console.log("Comprador maior de idade/acompanhado");
+    listaDeDestinos.splice(1, 1);
+} else {
+    console.log("Não é maior de idade nem está acompanhado.")
+}
+
+if(idadeComprador >= 18 && passagemComprada){
+    console.log('Boa viagem')
+} else {
+    console.log('Voce nao comprou a passagem ou tem menos de 18 anos.')
+}
+
+
     
 
 
